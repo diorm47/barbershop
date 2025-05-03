@@ -1,0 +1,453 @@
+@import url(./fonts.css);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  transition: all 0.4s ease;
+}
+
+body {
+  font-family: Alumni Sans, sans-serif;
+  scroll-behavior: smooth;
+}
+
+.page_wrapper {
+  width: 100%;
+  max-width: 420px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.container {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+nav {
+  padding: 5px 0;
+  background: #fff;
+}
+
+.nav_wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav_logo {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.nav_menu_btn {
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 7px;
+}
+
+header {
+  height: 600px;
+  width: 100%;
+  /* background: url(../assets/images/header-img.png); */
+  background-size: cover;
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  margin-top: 80px;
+}
+.header_video {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.smoke {
+  position: absolute;
+  bottom: -1px;
+  width: 100%;
+  left: 0;
+}
+
+.header_btn {
+  position: relative;
+  box-sizing: border-box;
+  border: 1px solid rgb(201, 201, 201);
+  border-radius: 5px;
+  width: 180px;
+  height: 50px;
+  box-shadow: 0px 30px 80px 0px rgba(43, 42, 41, 0.1);
+  background: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  font-family: GothamPro700;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 26px;
+  letter-spacing: 10%;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.services {
+  padding-top: 55px;
+  padding-bottom: 58px;
+}
+
+.section_title h2 {
+  color: rgb(0, 0, 0);
+  font-family: Alumni Sans;
+  font-size: 50px;
+  font-weight: 400;
+  line-height: 50px;
+  letter-spacing: 0%;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.service_card {
+  width: 100%;
+  border-radius: 10px;
+  background-size: cover;
+  padding: 20px;
+  padding-top: 16px;
+  margin-bottom: 3px;
+  position: relative;
+}
+.service_card_bg {
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  position: absolute;
+}
+.service_card div {
+  position: relative;
+}
+
+.service_descriptions h4 {
+  color: rgb(130, 130, 130);
+  font-family: Alumni Sans;
+  font-size: 26px;
+  font-weight: 500;
+  line-height: 32px;
+  letter-spacing: 0%;
+  text-align: left;
+  text-transform: uppercase;
+  margin-bottom: 4px;
+}
+
+.service_descriptions h3 {
+  color: rgb(0, 0, 0);
+  font-family: GothamPro400;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 26px;
+  letter-spacing: 0%;
+  text-align: left;
+  margin-bottom: 7px;
+}
+
+.service_descriptions p {
+  color: rgb(0, 0, 0);
+  font-family: GothamPro400;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+.service_descriptions {
+  margin-bottom: 15px;
+}
+.serv_date_price {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.serv_date_price p {
+  color: #82828280;
+  font-family: GothamPro400;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+.serv_time {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.line {
+  width: 1px;
+  background: rgb(130, 130, 130);
+  opacity: 0.15;
+  height: 15px;
+}
+
+.book_btn {
+  border-radius: 5px;
+  width: 130px;
+  height: 39px;
+  box-shadow: 0px 1px 0px 0px rgb(23, 22, 21);
+  background: rgb(50, 50, 50);
+  color: rgb(255, 255, 255);
+  font-family: GothamPro400;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: 10%;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.service_actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.services_categories {
+  margin-bottom: 9px;
+}
+
+.reviews {
+  padding: 50px 0 59px;
+  background: rgb(241, 241, 241);
+}
+
+.reviews_descriptions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  margin-bottom: 28px;
+}
+
+.reviews_descriptions h5 {
+  color: rgb(0, 0, 0);
+  font-family: GothamPro400;
+  font-size: 18px;
+  font-weight: 700;
+
+  letter-spacing: 0%;
+  text-align: left;
+  text-transform: uppercase;
+  margin-right: 3px;
+}
+
+.reviews_descriptions p {
+  color: rgb(130, 130, 130);
+  font-family: GothamPro400;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0%;
+  text-align: center;
+}
+
+.stars {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+}
+
+footer {
+  background: url(../assets/images/footer-bg.png);
+  background-size: cover;
+  padding: 45px 0 29px;
+}
+
+.f_container {
+  padding: 0 20px;
+}
+
+.footer_top {
+  margin-bottom: 35px;
+}
+footer p {
+  color: rgb(130, 130, 130);
+  font-family: GothamPro400;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0%;
+  text-align: left;
+  margin-bottom: 12px;
+}
+
+.open_hours_item {
+  display: flex;
+  align-items: flex-end;
+  gap: 5px;
+}
+footer h4 {
+  opacity: 0.8;
+}
+
+footer h3,
+footer h4 {
+  color: rgb(255, 255, 255);
+  font-family: GothamPro400;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+.open_hours {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 31px;
+}
+.open_hours_item div {
+  border: 1px dashed rgb(255, 255, 255);
+  opacity: 0.3;
+  width: 27px;
+  margin-bottom: 6px;
+}
+.open_hours_item:nth-child(1) div {
+  width: 42px;
+}
+
+.footer_btn {
+  margin-top: 17px;
+  border-radius: 5px;
+  width: 173px;
+  height: 40px;
+  box-shadow: 0px 30px 80px 0px rgba(43, 42, 41, 0.1);
+  background: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  font-family: GothamPro400;
+  font-size: 13px;
+  font-weight: 400;
+  letter-spacing: 10%;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.footer_top {
+  margin-bottom: 35px;
+}
+.footer_btm {
+  margin-top: 45px;
+}
+
+.map img {
+  width: 100%;
+  height: 370px;
+}
+
+.footer_btm h3 {
+  font-family: GothamPro700;
+  margin-bottom: 8px;
+}
+.footer_desc a:last-child {
+  display: flex;
+  align-items: center;
+}
+.footer_desc a:last-child h3 {
+  color: rgb(130, 130, 130);
+
+  line-height: 120%;
+  border-bottom: 1px solid rgb(130, 130, 130);
+}
+.socials {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.footer_socials {
+  margin: 30px 0;
+}
+
+.copyright {
+  color: rgb(255, 255, 255);
+  opacity: 0.5;
+  font-family: GothamPro400;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0%;
+  text-align: left;
+  margin: 0;
+}
+
+.mob_menu {
+  width: 100%;
+  position: fixed;
+  top: 80px;
+  left: 0;
+  height: calc(100vh - 80px);
+  z-index: 2;
+  background: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 57px 40px 50px;
+  transition: all 0.4s ease;
+  transform: translateX(100%);
+}
+.visible_mob_menu {
+  transition: all 0.4s ease;
+  transform: translateX(0);
+}
+
+.menu p {
+  color: rgb(0, 0, 0);
+  font-family: GothamPro400;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 48px;
+  letter-spacing: 0%;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.menu {
+  margin-bottom: 28px;
+}
+
+.hidden {
+  display: none;
+}
+.no-scroll {
+  overflow: hidden;
+}
+
+#navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  transition: transform 0.3s ease;
+  z-index: 1000;
+}
+
+.nav_hidden {
+  transform: translateY(-100%);
+}

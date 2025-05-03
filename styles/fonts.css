@@ -1,0 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=Alumni+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
+@font-face {
+  font-family: "GothamPro700";
+  src: url("../assets/fonts/GothamPro-700.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "GothamPro400";
+  src: url("../assets/fonts/GothamPro-400.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}

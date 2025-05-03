@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#ffffff" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+    />
+
+    <title></title>
+    <link rel="stylesheet" href="./styles/main.css" />
+    <title>CULT. The barbershop</title>
+    <meta name="description" content="CULT. The barbershop" />
+  </head>
+  <body>
+    <div class="page_wrapper">
+      <nav id="navbar">
+        <div class="nav_wrapper container">
+          <a href="./index.html">
+            <div class="nav_logo">
+              <img src="./assets/logo.svg" alt="" />
+            </div>
+          </a>
+          <div class="nav_menu_btn" onclick="toggleMenu()">
+            <img class="burger_menu" src="./assets/icons/burger.svg" alt="" />
+            <img
+              class="burger_menu_exit hidden"
+              src="./assets/icons/burger-exit.svg"
+              alt=""
+            />
+          </div>
+        </div>
+
+        <div class="mob_menu">
+          <div class="menu_top">
+            <div class="menu">
+              <a href="#service"><p>Services</p></a>
+              <a href="#reviews"><p>Reviews</p></a>
+              <a href="#"><p>Gallery</p></a>
+              <a href="#"><p>Out Team</p></a>
+              <a href="#"><p>Careers</p></a>
+              <a href="#"><p>Contact</p></a>
+            </div>
+            <a href="#"><button class="header_btn">Book Now</button></a>
+          </div>
+          <div class="socials menu_socials">
+            <a href="#"
+              ><img src="./assets/icons/socials/facebook-d.svg" alt=""
+            /></a>
+            <a href="#"
+              ><img src="./assets/icons/socials/instagramm-d.svg" alt=""
+            /></a>
+            <a href="#"
+              ><img src="./assets/icons/socials/youtube-d.svg" alt=""
+            /></a>
+          </div>
+        </div>
+      </nav>
+      <header>
+        <video
+          class="header_video"
+          autoplay
+          muted
+          loop
+          playsinline
+          preload="auto"
+          poster="./assets/images/header-img.png"
+          id="heroVideo"
+        >
+          <source src="./assets/video/video.MP4" type="video/mp4" />
+        </video>
+
+        <img class="smoke" src="./assets/icons/smoke.png" alt="" />
+        <a href="#"><button class="header_btn">Book Now</button></a>
+      </header>
+
+      <section class="container services" id="service">
+        <div class="section_title">
+          <h2>Our service</h2>
+        </div>
+        <div class="services_list">
+          <div class="services_categories">
+            <div class="service_card">
+              <img
+                class="service_card_bg"
+                src="./assets/images/s-card-bg.png"
+                alt=""
+              />
+
+              <div class="service_descriptions">
+                <h4>Premium</h4>
+                <h3>Royal SPA Treatment</h3>
+                <p>Full-service grooming ritual for head-to-toe renewal</p>
+              </div>
+              <div class="service_actions">
+                <div class="serv_date_price">
+                  <div class="serv_time">
+                    <img src="./assets/icons/clock.svg" alt="" />
+                    <p>2 hrs</p>
+                  </div>
+                  <div class="line"></div>
+                  <div class="serv_price">
+                    <p>$ 170</p>
+                  </div>
+                </div>
+                <button class="book_btn">Book Now</button>
+              </div>
+            </div>
+          </div>
+          <div class="services_categories">
+            <div class="service_card">
+              <img
+                class="service_card_bg"
+                src="./assets/images/s-card-bg.png"
+                alt=""
+              />
+
+              <div class="service_descriptions">
+                <h4>Haircut</h4>
+                <h3>Deluxe Haircut</h3>
+                <p>Tailored cut with detailed styling</p>
+              </div>
+              <div class="service_actions">
+                <div class="serv_date_price">
+                  <div class="serv_time">
+                    <img src="./assets/icons/clock.svg" alt="" />
+                    <p>1 hrs</p>
+                  </div>
+                  <div class="line"></div>
+                  <div class="serv_price">
+                    <p>$ 80</p>
+                  </div>
+                </div>
+                <button class="book_btn">Book Now</button>
+              </div>
+            </div>
+            <div class="service_card">
+              <img
+                class="service_card_bg"
+                src="./assets/images/s-card-bg.png"
+                alt=""
+              />
+
+              <div class="service_descriptions">
+                <h3>Deluxe Haircut & Beard Trim</h3>
+                <p>Complete grooming combo for a sharp look</p>
+              </div>
+              <div class="service_actions">
+                <div class="serv_date_price">
+                  <div class="serv_time">
+                    <img src="./assets/icons/clock.svg" alt="" />
+                    <p>1 hr 30 m</p>
+                  </div>
+                  <div class="line"></div>
+                  <div class="serv_price">
+                    <p>$ 120</p>
+                  </div>
+                </div>
+                <button class="book_btn">Book Now</button>
+              </div>
+            </div>
+          </div>
+          <div class="services_categories">
+            <div class="service_card">
+              <img
+                class="service_card_bg"
+                src="./assets/images/s-card-bg.png"
+                alt=""
+              />
+
+              <div class="service_descriptions">
+                <h4>Shaves & Beard</h4>
+                <h3>Signature Beard Trim</h3>
+                <p>Polished shaping for a neat and defined beard</p>
+              </div>
+              <div class="service_actions">
+                <div class="serv_date_price">
+                  <div class="serv_time">
+                    <img src="./assets/icons/clock.svg" alt="" />
+                    <p>30 m</p>
+                  </div>
+                  <div class="line"></div>
+                  <div class="serv_price">
+                    <p>$ 60</p>
+                  </div>
+                </div>
+                <button class="book_btn">Book Now</button>
+              </div>
+            </div>
+            <div class="service_card">
+              <img
+                class="service_card_bg"
+                src="./assets/images/s-card-bg.png"
+                alt=""
+              />
+
+              <div class="service_descriptions">
+                <h3>Signature Head Shave & Beard Trim</h3>
+                <p>Classic full shave experience with expert finish</p>
+              </div>
+              <div class="service_actions">
+                <div class="serv_date_price">
+                  <div class="serv_time">
+                    <img src="./assets/icons/clock.svg" alt="" />
+                    <p>1 hr</p>
+                  </div>
+                  <div class="line"></div>
+                  <div class="serv_price">
+                    <p>$ 100</p>
+                  </div>
+                </div>
+                <button class="book_btn">Book Now</button>
+              </div>
+            </div>
+          </div>
+          <div class="services_categories">
+            <div class="service_card">
+              <img
+                class="service_card_bg"
+                src="./assets/images/s-card-bg.png"
+                alt=""
+              />
+
+              <div class="service_descriptions">
+                <h4>Coloring</h4>
+                <h3>Hair DYE (Grey Blending)</h3>
+                <p>Natural shade to soften and refresh your look</p>
+              </div>
+              <div class="service_actions">
+                <div class="serv_date_price">
+                  <div class="serv_time">
+                    <img src="./assets/icons/clock.svg" alt="" />
+                    <p>30 m</p>
+                  </div>
+                  <div class="line"></div>
+                  <div class="serv_price">
+                    <p>$ 60</p>
+                  </div>
+                </div>
+                <button class="book_btn">Book Now</button>
+              </div>
+            </div>
+            <div class="service_card">
+              <img
+                class="service_card_bg"
+                src="./assets/images/s-card-bg.png"
+                alt=""
+              />
+
+              <div class="service_descriptions">
+                <h3>Beard DYE (Grey Blending)</h3>
+                <p>Defined tone for a younger, bolder beard</p>
+              </div>
+              <div class="service_actions">
+                <div class="serv_date_price">
+                  <div class="serv_time">
+                    <img src="./assets/icons/clock.svg" alt="" />
+                    <p>30 m</p>
+                  </div>
+                  <div class="line"></div>
+                  <div class="serv_price">
+                    <p>$ 100</p>
+                  </div>
+                </div>
+                <button class="book_btn">Book Now</button>
+              </div>
+            </div>
+          </div>
+          <div class="services_categories">
+            <div class="service_card">
+              <img
+                class="service_card_bg"
+                src="./assets/images/s-card-bg.png"
+                alt=""
+              />
+
+              <div class="service_descriptions">
+                <h4>Care & Clean-up</h4>
+                <h3>Waxing (nose + ears)</h3>
+                <p>Fast, hygienic removal for a clean finish</p>
+              </div>
+              <div class="service_actions">
+                <div class="serv_date_price">
+                  <div class="serv_time">
+                    <img src="./assets/icons/clock.svg" alt="" />
+                    <p>30 m</p>
+                  </div>
+                  <div class="line"></div>
+                  <div class="serv_price">
+                    <p>$ 25</p>
+                  </div>
+                </div>
+                <button class="book_btn">Book Now</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--  -->
+      <section class="reviews" id="reviews">
+        <div class="section_title">
+          <h2>Client Reviews</h2>
+        </div>
+        <div class="reviews_descriptions">
+          <h5>4.9</h5>
+          <div class="stars">
+            <img src="./assets/icons/star-filled.svg" alt="" />
+            <img src="./assets/icons/star-filled.svg" alt="" />
+            <img src="./assets/icons/star-filled.svg" alt="" />
+            <img src="./assets/icons/star-filled.svg" alt="" />
+            <img src="./assets/icons/star-half.svg" alt="" />
+          </div>
+          <p>Based on 321 reviews on Google</p>
+        </div>
+      </section>
+      <!--  -->
+
+      <footer>
+        <div class="footer_top f_container">
+          <div class="footer_desc">
+            <p>Working hours:</p>
+            <div class="open_hours">
+              <div class="open_hours_item">
+                <h4>Monday – Friday</h4>
+                <div></div>
+                <h3>9:00 am - 7:00 pm</h3>
+              </div>
+              <div class="open_hours_item">
+                <h4>Saturday – Sunday</h4>
+                <div></div>
+                <h3>Closed</h3>
+              </div>
+            </div>
+          </div>
+          <div class="footer_desc">
+            <p>Location:</p>
+            <h3>
+              3313 Hyland Ave Unit C-5, Costa Mesa, <br />
+              CA 92626
+            </h3>
+          </div>
+          <a href="#"> <button class="footer_btn">Get Directions</button></a>
+        </div>
+        <div class="map">
+          <img src="./assets/images/map.png" alt="" />
+        </div>
+        <div class="footer_btm f_container">
+          <div class="footer_desc">
+            <p>Contact:</p>
+            <a href="tel:(206) 451-0458"> <h3>(206) 451-0458</h3></a>
+            <a href="mailto:alex.cult.barber@gmail.com"
+              ><h3>alex.cult.barber@gmail.com</h3></a
+            >
+          </div>
+          <div class="socials footer_socials">
+            <a href="#"
+              ><img src="./assets/icons/socials/facebook.svg" alt=""
+            /></a>
+            <a href="#"
+              ><img src="./assets/icons/socials/instagramm.svg" alt=""
+            /></a>
+            <a href="#"
+              ><img src="./assets/icons/socials/youtube.svg" alt=""
+            /></a>
+          </div>
+
+          <p class="copyright">
+            © Cult. The barbershop 2025 All rights reserved
+          </p>
+        </div>
+      </footer>
+
+      <script src="./scripts/index.js"></script>
+    </div>
+  </body>
+</html>
