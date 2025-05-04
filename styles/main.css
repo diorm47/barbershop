@@ -266,7 +266,6 @@ header .header_btn {
   font-family: GothamPro400;
   font-size: 12px;
   font-weight: 400;
-  line-height: 18px;
   letter-spacing: 0%;
   text-align: center;
 }
@@ -330,11 +329,11 @@ footer h4 {
 .open_hours_item div {
   border: 1px dashed rgb(255, 255, 255);
   opacity: 0.3;
-  width: 27px;
+  width: 13px;
   margin-bottom: 6px;
 }
 .open_hours_item:nth-child(1) div {
-  width: 42px;
+  width: 25px;
 }
 
 .footer_btn {
@@ -403,9 +402,8 @@ footer h4 {
 .mob_menu {
   width: 100%;
   position: fixed;
-  top: 80px;
   left: 0;
-  height: calc(100vh - 80px);
+  height: calc(100dvh - 80px);
   z-index: 2;
   background: rgb(255, 255, 255);
   display: flex;
@@ -415,6 +413,8 @@ footer h4 {
   transition: all 0.4s ease;
   transform: translateX(100%);
 }
+
+
 .visible_mob_menu {
   transition: all 0.4s ease;
   transform: translateX(0);
