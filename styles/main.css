@@ -106,6 +106,9 @@ header {
   text-align: center;
   text-transform: uppercase;
 }
+header .header_btn {
+  margin-bottom: -5px;
+}
 
 .services {
   padding-top: 55px;
@@ -445,9 +448,204 @@ footer h4 {
   left: 0;
   width: 100%;
   transition: transform 0.3s ease;
-  z-index: 1000;
+  z-index: 10;
 }
 
 .nav_hidden {
   transform: translateY(-100%);
+}
+
+.review_card {
+  box-sizing: border-box;
+  border: 1px solid rgb(245, 245, 245);
+  border-radius: 10px;
+  width: 280px;
+  min-height: 360px;
+  padding: 20px;
+  box-shadow: 0px 8px 16px -4px rgba(22, 34, 51, 0.1);
+  background: rgb(255, 255, 255);
+}
+
+.review_platform {
+  border-radius: 40px;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  box-shadow: 0px 30px 80px 0px rgba(43, 42, 41, 0.1);
+  background: rgb(255, 255, 255);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 30px 80px 0px rgba(43, 42, 41, 0.1);
+  background: rgb(255, 255, 255);
+}
+
+.review_platform img {
+  width: 14px;
+  height: 14px;
+}
+.rev_author_avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 40px;
+}
+
+.author_img {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.review_author {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 10px;
+}
+.author_descs h4 {
+  color: rgb(0, 0, 0);
+  font-family: GothamPro700;
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 6px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+.rev_stars img {
+  width: 14px;
+  height: 13.3px;
+}
+.rev_stars {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.rev_stars p {
+  color: rgb(130, 130, 130);
+  font-family: GothamPro400;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+.review {
+  display: inline;
+}
+
+.review[data-collapsed="true"]::after {
+  content: "... MORE";
+  color: rgb(23, 111, 204);
+  cursor: pointer;
+  font-family: GothamPro700;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 18px;
+  letter-spacing: 0%;
+  padding-left: 3px;
+}
+
+.review[data-collapsed="false"]::after {
+  content: " LESS";
+  color: rgb(23, 111, 204);
+  cursor: pointer;
+  font-family: GothamPro700;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 18px;
+  letter-spacing: 0%;
+  padding-left: 3px;
+}
+
+.review {
+  font-family: GothamPro400;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0%;
+  text-align: left;
+  color: rgb(0, 0, 0);
+}
+
+.rev_gallery {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-top: 10px;
+}
+
+.rev_gallery img {
+  border-radius: 5px;
+}
+
+.lightbox {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  padding-top: 50px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  text-align: center;
+}
+
+.lightbox-content {
+  width: 90%;
+  height: 80%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.close {
+  position: absolute;
+  top: -10px;
+  right: 15px;
+  color: white;
+  font-size: 60px;
+  cursor: pointer;
+}
+
+.nav {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.nav button {
+  background: white;
+  border: none;
+  font-size: 20px;
+
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.reviews_carousel {
+  padding-left: 10px !important;
+}
+.swiper-slide {
+  width: 280px !important;
+}
+
+.swiper_arrows {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 40px;
+}
+.swiper_arrows div {
+  cursor: pointer;
 }
