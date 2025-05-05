@@ -412,11 +412,15 @@ footer h4 {
   padding: 57px 40px 50px;
   transition: all 0.4s ease;
   transform: translateX(100%);
+
 }
 
 .visible_mob_menu {
   transition: all 0.4s ease;
   transform: translateX(0);
+  left: 50%;
+  max-width: 420px;
+  margin-left: -210px;
 }
 
 .menu p {
@@ -650,4 +654,12 @@ footer h4 {
     left: 0;
     margin-left: 0;
   }
+  .visible_mob_menu {
+    transition: all 0.4s ease;
+    transform: translateX(0);
+    left: auto;
+   
+    margin-left: 0;
+  }
+  
 }
