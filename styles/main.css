@@ -64,7 +64,7 @@ nav {
 header {
   height: 600px;
   width: 100%;
-  /* background: url(../assets/images/header-img.png); */
+  background: url(../assets/images/header-img.png);
   background-size: cover;
   position: relative;
   display: flex;
